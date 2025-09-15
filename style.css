@@ -25,6 +25,7 @@ body {
     background-color: var(--background);
 }
 
+/* Header */
 .logo h1{
     font-weight: 700;
     font-style: bold;
@@ -33,6 +34,14 @@ body {
     width: 106px;
 }
 
+header {
+    display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 30px;
+}
+
+/* Navigation */
 .nav-item a {
     text-decoration: none;
     color: var(--text);
@@ -44,49 +53,78 @@ body {
     font-size: 1.5rem;
     cursor: pointer;
     user-select: none;
-    width: 32px;
-    height: 32px;
+    width: 3.616%;
+    /* height: 32px; */
     position: relative;
     z-index: 2;
+    /* margin-top: 4px; */
 }
 
 .hamburger span {
     display: block;
-    position: absolute;
-    height: 2px;
-    width: 80%;
+    background-color: var(--text);
+    /* position: absolute; */
+    height: 4px;
+    /* width: 80%; */
     border-radius: 2px;
-    opacity: 1;
+    /* opacity: 1; */
     left: 0;
+    margin: 4px 0;
     transition:all 0.3s ease;
 }
 
-.btn-primary {
-    background-color: var(--primary);
-    color:var(--white);
-    border-radius: 20px;
-    width: fit-content;
-    height:fit-content;
+/* Transform to X when checked */
+#menu-toggle:checked + .hamburger span:nth-child(1) {
+    transform: rotate(45deg) translate(6px, 6px);
 }
 
-.arrow-btn {
-    background-color: var(--arrow);
-    color:var(--white);
-    border-radius: 20px;
-    margin: 0px 10px;
-    font-size: 20px;
+#menu-toggle:checked + .hamburger span:nth-child(2) {
+    opacity: 0;
 }
 
-header {
-    display: flex;
-  align-items: center;
-  justify-content: space-between;
+#menu-toggle:checked + .hamburger span:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
 }
+
+
 
 .menu-toggle {
     display: none;
 }
 
+/* Show menu when checked */
+#menu-toggle:checked ~ .nav-item {
+  display: flex;
+}
+
+.nav-item {
+    display: flex;
+    gap: 20px;
+}
+
+/* Button */
+.btn-primary {
+    display: flex;
+    align-items: center;
+    background-color: var(--primary);
+    color:var(--white);
+    border-radius: 20px;
+    /* width: max-content; */
+    /* height: max-content; */
+    padding: 5px 10px;
+}
+
+.arrow-btn {
+    display: flex;
+    background-color: var(--arrow);
+    color:var(--white);
+    border-radius: 50%;
+    margin: 0px 5px;
+    font-size: 20px;
+    padding: 2px;
+}
+
+/* Hero section */
 section.hero {
     display: flex;
     align-items: center;
@@ -111,11 +149,16 @@ section.hero {
     line-height: 30px;
 }
 
-nav.nav-item {
-    display: flex;
+.responsive-image {
+    width: 100%;
 }
 
-.large {
+/* Default: Show large, hide small */
+/* .large {
+  display: block;
+} */
+
+/* .large {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -126,16 +169,70 @@ nav.nav-item {
 
 .large img {
     width: 100%;
+} */
+
+.small {
+  display: none;
+}
+
+/* Small screens: Show small, hide large */
+@media (max-width: 768px) {
+  .large {
+    display: none;
+  }
+  .small {
+    display: block;
+    width: 100%;
+  }
+
+  #hide {
+    display: none;
+}
+
+
+.hamburger{
+       display: block;
+}
+
+
+ .menu-toggle{
+        /* display: block; */
+        /* position: absolute; */
+        /* top: 20px; */
+        /* right: 0px; */
+        /* opacity: 0; */
+        /* width: 32px; */
+        /* height: 32px; */
+        /* z-index: 3; */
+    }
+
+    .nav-item {
+    display: none;
+        flex-direction: column;
+        position: absolute;
+  width: 100%;
+  top: 59px;
+        left:0;
+        z-index: 2;
+        background: var(--background);
+        width: 100%;
+        padding: 1.25rem;
+    }
+
+
+.small {
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    /* background-size: cover; */
+    /* background-repeat: no-repeat; */
+    /* background-position: center; */
+}
 }
 
 .card {
     margin: 10px;
     max-width: 300px;
     text-align: center;
-}
-
-.small {
-    display: none;
 }
 
 .container {
@@ -234,6 +331,24 @@ flex-wrap: wrap;
 
 }
 
+.f1-card {
+    background-image: url(ea33cbe312cbfedef1402d4a5d802a6afc3b6495.png);
+        background-repeat: no-repeat;
+}
+
+.f2-card {
+    background-color: var(--secondary);
+}
+
+.f3-card {
+    background-color: var(--highlight);
+}
+
+.f4-card {
+    background-color: var(--primary);
+    background-image: url(asianfemalesmile.png);
+}
+
 /* Footer */
 footer {
   background-color: var(--primary);
@@ -286,21 +401,4 @@ footer a {
   transition: transform 0.25s ease;
 }
 
-@media (min-width: 768px) {
-    .hamburger {
-        display: block;
-    }
-
-    .nav-item {
-        display: none;
-    }
-.small {
-    display: flex;
-    width: 100%;
-    flex-wrap: wrap;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-}
 
