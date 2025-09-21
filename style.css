@@ -109,9 +109,10 @@ header {
     background-color: var(--primary);
     color:var(--white);
     border-radius: 20px;
+    gap: 3px;
     /* width: max-content; */
     /* height: max-content; */
-    padding: 5px 10px;
+    padding: 5px 12px;
 }
 
 .arrow-btn {
@@ -133,6 +134,8 @@ section.hero {
 
 .card-container {
     display: flex;
+    gap: 80px;
+    flex-wrap: wrap;
 }
 
 .hero h1 {
@@ -142,15 +145,110 @@ section.hero {
     line-height: 30px;
     letter-spacing: 5px;
     text-align: center;
+    letter-spacing: 0.5%;
+    font-style: medium;
+    margin-top: 30px;
 }
 
-.hero h2 {
+.hero span {
     font-size: 40px;
     line-height: 30px;
+    font-family: Inter;
+    font-weight: 700;
+    letter-spacing: 0%;
+    font-style: bold;
+}
+
+.hero p {
+    margin: 15px auto;
+        text-align: center;
+    line-height: 24px;
+    letter-spacing: 2%;
 }
 
 .responsive-image {
     width: 100%;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    max-width: 513px;
+    margin: auto;
+    font-size: 32px;
+    line-height: 35px;
+    letter-spacing: 2%;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 120px;
+}
+
+p {
+    display: flex;
+    justify-content: center;
+    line-height: 24px;
+    letter-spacing: 2%;
+    max-width: 783px;
+    margin: auto;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.feature-cards1 {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+        margin-top: 49px;
+}
+
+.feature-cards2 {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+        margin-top: 20px;
+}
+
+.f1-card h3,
+.f2-card h3,
+.f3-card h3,
+.f4-card h3{
+    margin-left: 20px;
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 2%;
+    font-weight: 600;
+}
+
+.f1-card ,
+.f2-card ,
+.f3-card ,
+.f4-card {
+    display: flex;
+    /* text-align: center; */
+    justify-self: center;
+    justify-content: flex-end;
+    flex-direction: column;
+    /* padding: 52px; */
+}
+
+.f1-card p,
+.f2-card p,
+.f3-card p,
+.f4-card p
+{
+    display: inline-block;
+    /* justify-content: center; */
+    line-height: 24px;
+    letter-spacing: 2%;
+    max-width: 297px;
+    margin-left: 20px;
+    margin-bottom: 40px;
+    margin-top: 10px;
+    text-align: start;
+}
+
+.f2-card p {
+    color: var(--text-light);
 }
 
 /* Default: Show large, hide small */
@@ -235,6 +333,14 @@ section.hero {
     text-align: center;
 }
 
+.card h3 {
+    line-height: 100%;
+    letter-spacing: 0%;
+    font-size: 24px;
+    font-style: semi-bold;
+    font-weight: 600;
+}
+
 .container {
     position: relative;
     /* width: 400px; */
@@ -283,12 +389,14 @@ section.hero {
 
 .impact {
     display: flex;
+    justify-content: space-evenly;
 }
 
 .impact1, .impact2, .impact3 {
-    height: 300px;
-    width: 600px;
-    object-fit: contain;
+    height: 470px;
+    width: 397px;
+    object-fit: cover;
+    border-radius: 30px;
 }
 
 .impact1 {
@@ -297,10 +405,17 @@ section.hero {
 
 .impact2 {
     background-image: url(handsonhead.png);
+       background-repeat: no-repeat;
+    background-size: cover;
+ background-position: center;
 }
 
 .impact3 {
     background-image: url(whiteshirtsmile.png);
+    background-repeat: no-repeat;
+    background-size: 411px;
+    background-position: left bottom;
+    background-color: #B5A58C;
 }
 
 .workflow {
@@ -333,20 +448,40 @@ flex-wrap: wrap;
 
 .f1-card {
     background-image: url(ea33cbe312cbfedef1402d4a5d802a6afc3b6495.png);
-        background-repeat: no-repeat;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 320px;
+    width: 50%;
+    color: var(--white);
+    border-radius: 30px;
+    /* margin-left: 108px; */
 }
 
 .f2-card {
     background-color: var(--secondary);
+    border-radius: 30px;
+    width: 33.6%;
+    color: var(--text);
 }
 
 .f3-card {
     background-color: var(--highlight);
+      border-radius: 30px;
+    width: 33.6%;
+    color: var(--white);
 }
 
 .f4-card {
     background-color: var(--primary);
     background-image: url(asianfemalesmile.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right center;
+    height: 320px;
+    width: 50%;
+    color: var(--white);
+    border-radius: 30px;
+    /* background-size: 600px auto; */
 }
 
 /* Footer */
