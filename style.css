@@ -400,7 +400,11 @@ p {
 }
 
 .impact1 {
-    background-image:url() ;
+    background-image:url(phone.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: #F0E7D8;
 }
 
 .impact2 {
@@ -408,6 +412,7 @@ p {
        background-repeat: no-repeat;
     background-size: cover;
  background-position: center;
+ color: var(--white);
 }
 
 .impact3 {
@@ -416,7 +421,76 @@ p {
     background-size: 411px;
     background-position: left bottom;
     background-color: #B5A58C;
+    color: var(--white);
 }
+
+.impact1,
+.impact2,
+.impact3{
+        display: flex;
+    /* text-align: center; */
+    justify-self: center;
+    justify-content: flex-end;
+    flex-direction: column;
+    /* padding: 52px; */
+}
+
+.impact1 h3,
+.impact2 h3,
+.impact3 h3{
+    margin-left: 20px;
+    font-size: 32px;
+    line-height: 24px;
+    letter-spacing: 2%;
+    font-weight: 600;
+}
+
+.impact1  span,
+.impact2  span,
+.impact3  span
+{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    /* display: inline-block; */
+    /* justify-content: center; */
+    line-height: 24px;
+    letter-spacing: 2%;
+    /* max-width: 297px; */
+    margin-left: 20px;
+    margin-bottom: 40px;
+    margin-top: 10px;
+    text-align: start;
+    /* margin: auto; */
+    text-align: center;
+}
+
+.impact-container {
+     margin-top: 120px;
+    justify-content: space-evenly;
+    display: flex;
+    /* gap: 30px; */
+    align-items: flex-end;
+    flex-wrap: wrap;
+    background-image: url(image\ of\ 4.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 570px;
+    justify-self: center;
+    width: 86.5%;
+    border-radius: 30px;
+    /* justify-content: flex-end; */
+}
+.impactcard {
+    width: 340px;
+    margin: 10px;
+    text-align: center;
+    background-color: var(--accent);
+    height: 200px;
+}
+
 
 .workflow {
     background-color: var(--primary);
