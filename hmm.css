@@ -1,0 +1,52 @@
+.image {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    /* width: 150px; */
+    /* width: auto; */
+    height: 597px;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+  }
+
+/* Style all text blocks */
+  .text {
+    /* line-height: 2%; */
+    font-size: 24px;
+    margin: 20px;
+    position: absolute;
+    width: 300px;
+    text-align: center;
+    transform-origin: center;
+    /* position: absolute; */
+    transform: translate(-50px,-50px);
+  }
+   
+.text p {
+    font-size: 16px;
+}
+
+/* Position each text around the circle (6 items spaced 60deg apart) */
+  .text1 {top: 71%;left: 18%;/* transform: translate(-50%, -50%); */}
+    .text2 {top: 37%;left: 83%;/* transform: translate(-50%, -50%); */}
+  .text3 {top: 72%;left: 83%;/* transform: translate(-50%, -50%); */}
+    .text4 {top: 108%;left: 83%;/* transform: translate(-50%, -50%); */}
+    .text5 {top: 110%;left: 18%;/* transform: translate(-50%, -50%); */}
+  .text6 {top: 32%;left: 18%;/* transform: translate(-50%, -50%); */} */
+
+  .outer-wrapper {
+    position: relative;
+    height: 500px;
+    margin-bottom: 2rem;
+}
+
+.container {
+  position: absolute;
+  top: 0;
+  /* width: 400px; */
+  /* margin-top: 34px; */
+  /* height: 667px; */
+  left: 0;
+  right: 0;
+  bottom: 0;
+  }
