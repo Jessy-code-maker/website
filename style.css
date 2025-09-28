@@ -196,6 +196,15 @@ p {
   text-align: center;
 }
 
+p.copyright-p {
+    font-family: Manrope;
+    font-size: 24px;
+    line-height: 100%;
+    font-weight: 500;
+    margin: 0;
+    margin-top: 20px;
+}
+
 .feature-cards1 {
   display: flex;
   gap: 20px;
@@ -280,6 +289,11 @@ p {
   line-height: 35px;
   font-weight: 400;
 }
+
+.promo  h2{
+   display:block;
+   }
+
 
 .promo {
   justify-items: center;
@@ -629,28 +643,63 @@ p {
 /* Footer */
 footer {
   background-color: var(--primary);
-  padding: 2rem 1.25rem;
+  padding: 2rem 0rem;
   margin-top: 3rem;
+  color: var(--white);
+}
+
+section.footer.Col1 {
+    /* margin-left: 100px; */
+}
+
+footer .Col1 h2 {
+  margin-bottom: 38px;
+  /* margin: 0; */
+  margin-top: 0px;
+  /* text-align: start; */
+  justify-content: start;
+}
+
+footer .Col1 p {
+  display: block;
+  margin-top: 0px;
+  text-align: start;
+  font-weight: 600;
+  line-height: 35px;
+  font-size: 24px;
+}
+
+footer .Col1 p span {
+font-weight: 500;
+font-size: 20px;
+}
+
+section.footer.Col4,
+section.footer.Col3,
+section.footer.Col2 {
+  padding-top: 55px;
 }
 
 footer a {
   text-decoration: none;
-  color: black;
+  color:var(--white);
 }
 
 .flex-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 2rem;
-  margin: 0 auto 1rem;
-  max-width: 1100px;
+  justify-content: space-around;
+  /* gap: 2rem; */
+  /* margin: 0 auto 1rem; */
+  /* max-width: 1100px; */
 }
 
 .flex-container li {
   list-style: none;
-  font-size: 0.95rem;
-  margin-bottom: 0.3rem;
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 45px;
+  /* margin-bottom: 0.3rem; */
   transition: transform 0.18s ease;
 }
 
@@ -659,13 +708,29 @@ footer a {
 }
 
 /* Bottom Footer Row */
-.copyright-socials-grp {
+/* .copyright-socials-grp {
   max-width: 1100px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 1rem;
+} */
+
+.copyright-socials-grp {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  gap: 90px;
+  border-top: 1px solid var(--white);
+  margin-top: 58px;
+  /* padding-top: 16px; */
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  transform: translateX(-50%);
+  /* box-sizing: border-box; */
 }
 
 .footer-social {
@@ -701,10 +766,17 @@ footer a {
 }
 
 .card-last {
-    margin: 10px;
-  background-color: var(--secondary);
-  padding: 15px;
-  border-radius: 8px;
+    width: 608px;
+    height: 139px;
+    margin-bottom: 20px;
+    background-color: var(--secondary);
+    padding: 30px;
+    padding-bottom: 17px;
+    border-radius: 8px;
+}
+
+.card-last p {
+  text-align: start;
 }
 
 /* Outer wrapper to maintain page spacing */
