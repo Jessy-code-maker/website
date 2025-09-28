@@ -569,16 +569,17 @@ p.copyright-p {
 }
 
 .workflow h2 {
+    margin-right: 311px;
     font-size: 24px;
     margin-top: 0;
     color: var(--white);
-    padding-left: 71px;
+    padding-left: 80px;
     text-align: left;
 }
-
 .work-p{
     color: var(--white);
-    padding-left: 182px;
+    padding-left: 394px;
+    text-align: start;
 }
 
 
