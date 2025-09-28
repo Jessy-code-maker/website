@@ -50,3 +50,44 @@
   right: 0;
   bottom: 0;
   }
+
+
+  /* Precise 45px gap positions */
+.text1 {
+  top: calc(50% - 429px);
+  left: calc(50% - 452px);
+}
+.text2 {
+  top: calc(50% - 429px);
+  left: calc(50% + 272px);
+}
+.text3 {
+  top: 50%;
+  left: calc(50% - 452px);
+  transform: translateY(-50%);
+}
+.text4 {
+  top: 50%;
+  left: calc(50% + 272px);
+  transform: translateY(-50%);
+}
+.text5 {
+  top: calc(50% + 329px);
+  left: calc(50% - 452px);
+}
+.text6 {
+  top: calc(50% + 329px);
+  left: calc(50% + 272px);
+}
+
+/* Text card base styles */
+.text {
+  position: absolute;
+  width: 300px;
+  background: #f5f5f5;
+  padding: 12px;
+  border-radius: 8px;
+  z-index: 2;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}

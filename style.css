@@ -364,17 +364,32 @@ p {
 .last-container img {
   height: 457px;
   width: 608px;
+  border-radius: 30px;
 }
 
 .teampics {
+  margin-top: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
+
 .teampics img {
-  width: 250px;
-  border-radius: 20px;
+  width: 240px;
+  /* height: 400px; */
+  border-radius: 30px;
+}
+.teampics img:nth-child(1),
+.teampics img:nth-child(2),
+.teampics img:nth-child(4),
+.teampics img:nth-child(5) {
+    height: 400px;
+    object-fit: cover;
+}
+.teampics img:nth-child(3) {
+    height: 500px;
+    object-fit: cover;
 }
 
 .impact {
@@ -513,20 +528,30 @@ p {
 
 .workflow-image {
   width: 50%;
-}
-
-.workflow-image img {
-  width: 100%;
+  /* object-fit: cover; */
+  /* background-image: url(  holdingphone.png); */
+  /* background-repeat: no-repeat; */
+  /* background-size: cover; */
+  background-position: center;
+  /* height: 14%; */
+  scale: 1.05;
+  /* width: 98.5%; */
+  /* height: 789px; */
+  transform: rotate(10.55deg)translate(-51px,2px );
 }
 
 .workflow-container {
   display: flex;
+  height: 663px;
+  overflow-y: hidden;
+  /* width: fit-content; */
 }
 
 .workflow-text {
   gap: 20px;
   display: flex;
   flex-wrap: wrap;
+  padding-top: 38px;
 }
 
 .workflow h2 {
@@ -544,10 +569,23 @@ p {
 
 
 .WT-card {
-  border-radius: 20px;
+  padding: 30px 20px;
+    border-radius: 20px;
   background-color: var(--accent);
   width: 296.9010925292969px;
   height: 232.66275024414062px;
+}
+
+.WT-card h3 {
+    font-size: 20px;
+    letter-spacing: 2%;
+    font-style: medium;
+    /* font-weight: 500; */
+    line-height: 24px;
+}
+
+.WT-card p {
+  text-align: start;
 }
 
 .f1-card {
@@ -644,8 +682,8 @@ footer a {
 .last-container {
   display: flex;
   align-items: flex-start;
-  justify-content: space-between;
-  gap: 40px; /* optional spacing between image and text */
+  justify-content: center;
+  gap: 24px; /* optional spacing between image and text */
   padding: 20px;
 }
 
@@ -655,6 +693,7 @@ footer a {
   display: block;
 }
 
+
 .lastcard-container {
   display: flex;
   flex-direction: column;
@@ -663,7 +702,7 @@ footer a {
 
 .card-last {
     margin: 10px;
-  background-color: #f5f5f5;
+  background-color: var(--secondary);
   padding: 15px;
   border-radius: 8px;
 }
