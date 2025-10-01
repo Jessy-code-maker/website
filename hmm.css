@@ -149,3 +149,33 @@ section.footer.Col1 {
   align-items: center;
   gap: 1rem;
 } */
+
+
+@media (max-width: 767px) {
+  .workflow-container {
+    flex-direction: column;
+    height: auto;
+    overflow-y: visible;
+    position: relative; /* needed for positioning .workflow-image */
+  }
+
+  .workflow-image {
+    order: 2; /* appear last */
+    width: 338.26px;
+    height: 367.33px;
+    transform: rotate(-10.55deg);
+    position: absolute;
+    top: 1166px;
+    left: -15px;
+    opacity: 1;
+    scale: 1; /* reset scale from desktop */
+    margin-bottom: 0; /* reset margin */
+  }
+
+  .workflow-text {
+    order: 1;
+    flex-direction: column;
+    gap: 15px;
+    padding-top: 0;
+  }
+}
