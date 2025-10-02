@@ -429,6 +429,7 @@ aspect-ratio: 4 / 5; /* keeps height proportional */
   padding: 20px;
   align-items: flex-start;
   flex-direction: column;
+  flex-grow: 1;
   width: 30%;
 max-width: 360px;
 min-width: 260px;
