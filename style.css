@@ -1098,7 +1098,9 @@ h2.part-3 {
   }
 
   .WT-card p {
-    text-align: center;
+    text-align: start;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .workflow-container {
