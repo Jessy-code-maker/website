@@ -934,7 +934,7 @@ p {
 
 .f4-card {
   background-size: contain;
-  background-position: 96px 41px;
+  background-position: right bottom;
   background-size: auto 279px;
 }
 
@@ -1159,10 +1159,14 @@ p.copyright-p {
 }
 }
 
-@media (min-width: 425px) {
+@media (max-width: 426px) {
 
 .f1-card{
 background-position: -100px;
+}
+
+.f4-card {
+  background-position: 96px 41px;
 }
 }
 
