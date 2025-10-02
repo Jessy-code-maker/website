@@ -1058,7 +1058,8 @@ h2.part-3 {
     width: 100%;
     transform: none;
     scale: 1;
-    margin-bottom: 20px;
+        overflow: hidden;
+    /* margin-bottom: 20px; */
     height: auto;
   }
 
@@ -1110,6 +1111,7 @@ h2.part-3 {
   .workflow-image img {
     /* width: 338.2644268023887px; */
     height: 367.32659042066865px;
+    scale: 1.08;
 }
 
   .workflow-text {
@@ -1118,10 +1120,6 @@ h2.part-3 {
     gap: 15px;
     padding-top: 0;
   }
-
-  .f1-card {
-  background-position: -100px;
-}
 
 .impact1 {
   background-size: contain;
@@ -1157,6 +1155,13 @@ p.copyright-p {
 
 .last-container {
   align-items: center;
+}
+}
+
+@media (min-width: 425px) {
+
+.f1-card{
+background-position: -100px;
 }
 }
 
